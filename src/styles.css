@@ -1,0 +1,145 @@
+
+
+
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h1 {
+  width: 100%;
+}
+
+p {
+  margin: 0.5em 1em;
+}
+
+.header p {
+  font-weight: bold;
+}
+
+
+.breakdown-by-person {
+  display: none;
+}
+
+.breadown-by-person.show {
+  display: block;
+}
+
+
+.breakdown-by-person > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+}
+
+.breakdown-by-person > div:nth-child(2n) {
+  background: #dedede;
+}
+
+
+
+
+.totals {
+  padding: 3em;
+  border: 1px solid black;
+}
+
+.breakdown-by-person .key {
+  width: 50px;
+}
+
+.breakdown-by-person .name {
+  flex-grow: 1;
+}
+
+.breakdown-by-person .owes {
+
+}
+
+.breakdown-by-person .currency {
+  margin-left: 0;
+}
+
+
+
+
+
+
+
+.transactions {
+
+}
+
+.transactions p:first-of-type {
+  margin-left: 0;
+}
+
+.transactions p:last-of-type {
+  margin-right: 0;
+}
+
+
+.transactions > div {
+  display: flex;
+  flex-wrap: wrap;
+  /*padding-bottom: 2em;*/
+}
+
+.transactions > div.header {
+  padding-bottom: 0;
+}
+
+
+.transactions .date {
+  width: 60px;
+}
+
+.transactions .description {
+  flex-grow: 1;
+}
+
+.transactions .amount {
+  width: 65px;
+  text-align: center;
+}
+
+.transactions .my-delta {
+  width: 65px;
+  text-align: center;
+}
+
+.transactions .toggle {
+  width: 65px;
+  margin: 0.5em 1em;
+  padding: 0;
+}
+
+
+.transactions .breakdown-by-person {
+  flex-basis: 100%;
+  margin: 0 1.5em 1.5em;
+  border: 1px solid #dedede;
+}
+
+.transactions .breakdown-by-person .breakdown {
+  font-weight: bold;
+}
+
+
+.transactions .breakdown-by-person .person {
+  flex-grow: 1;
+}
+
+.transactions .breakdown-by-person .pay {
+  width: 65px;
+  text-align: center;
+}
+
+.transactions .breakdown-by-person .owe {
+  width: 65px;
+  text-align: center;
+}
