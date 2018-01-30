@@ -1,0 +1,10 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'helvetica', Arial, sans-serif;
+  font-size: $font-size-standard;
+  color: $dark;
+  -webkit-text-size-adjust: none;
+}

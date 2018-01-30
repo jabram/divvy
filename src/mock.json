@@ -1,254 +1,47 @@
 [
   {
-    "date": "12/31/17",
+    "id": 1,
+    "date": "12/12/12",
     "description": "some description",
-    "amount": "$10.00",
-    "myDelta": "$5.00",
-    "breakdown": [
+    "amount": 1000.00
+  },
+  {
+    "id": 2,
+    "date": "1/1/11",
+    "description": "some long description lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "amount": 1,
+    "people": [
       {
-        "person": "Person A",
-        "pay": "$5.00",
-        "owe": "$5.00"
+        "id": 1,
+        "name": "name 1",
+        "breakdown": "breakdown 1",
+        "should": "should 1",
+        "paid": "paid 1",
+        "remaining": "remaining 1"
       },
       {
-        "person": "Person B",
-        "pay": "$5.00",
-        "owe": "$5.00"
+        "id": 2,
+        "name": "name dos",
+        "breakdown": "breakdown dos",
+        "should": "should dos",
+        "paid": "paid dos",
+        "remaining": "remaining dos"
       },
       {
-        "person": "Person C",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person D",
-        "pay": "$5.00",
-        "owe": "$5.00"
+        "id": 3,
+        "name": "name",
+        "breakdown": "breakdown",
+        "should": "should",
+        "paid": "paid",
+        "remaining": "remaining"
       }
     ]
   },
   {
-    "date": "12/30/17",
-    "description": "some description",
-    "amount": "$10.00",
-    "myDelta": "$5.00",
-    "breakdown": [
-      {
-        "person": "Person A",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person B",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person C",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person D",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      }
-    ]
-  },
-  {
-    "date": "12/29/17",
-    "description": "some description",
-    "amount": "$10.00",
-    "myDelta": "$5.00",
-    "breakdown": [
-      {
-        "person": "Person A",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person B",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person C",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person D",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      }
-    ]
-  },
-  {
-    "date": "12/28/17",
-    "description": "some description",
-    "amount": "$10.00",
-    "myDelta": "$5.00",
-    "breakdown": [
-      {
-        "person": "Person A",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person B",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person C",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person D",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      }
-    ]
-  },
-  {
-    "date": "12/27/17",
-    "description": "some description",
-    "amount": "$10.00",
-    "myDelta": "$5.00",
-    "breakdown": [
-      {
-        "person": "Person A",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person B",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person C",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person D",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      }
-    ]
-  },
-  {
-    "date": "12/26/17",
-    "description": "some description",
-    "amount": "$10.00",
-    "myDelta": "$5.00",
-    "breakdown": [
-      {
-        "person": "Person A",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person B",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person C",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person D",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      }
-    ]
-  },
-  {
-    "date": "12/25/17",
-    "description": "some description",
-    "amount": "$10.00",
-    "myDelta": "$5.00",
-    "breakdown": [
-      {
-        "person": "Person A",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person B",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person C",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person D",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      }
-    ]
-  },
-  {
-    "date": "12/24/17",
-    "description": "some description",
-    "amount": "$10.00",
-    "myDelta": "$5.00",
-    "breakdown": [
-      {
-        "person": "Person A",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person B",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person C",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person D",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      }
-    ]
-  },
-  {
-    "date": "12/23/17",
-    "description": "some description",
-    "amount": "$10.00",
-    "myDelta": "$5.00",
-    "breakdown": [
-      {
-        "person": "Person A",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person B",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person C",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      },
-      {
-        "person": "Person D",
-        "pay": "$5.00",
-        "owe": "$5.00"
-      }
-    ]
+    "id": 3,
+    "date": "2/12/18",
+    "description": "some other kind of description",
+    "amount": 33.33
   }
+
 ]

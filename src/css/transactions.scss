@@ -1,0 +1,82 @@
+.transactions {
+  margin: $double 0;
+  padding: $half;
+}
+
+.transaction {
+  margin-bottom: $standard;
+
+  .transaction-main {
+    border: 1px solid $dark;
+  }
+
+
+  /* designed
+  .transaction-details {
+    padding: $double $quad;
+    border: 1px solid $light;
+  }
+  */
+  .transaction-details {
+    padding: 0 $quad;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+  }
+
+  &.expanded .transaction-details {
+    max-height: none;
+    padding: $double $quad;
+    border: 1px solid $light;
+    opacity: 1;
+  }
+}
+
+.transaction-main {
+  grid-template-columns: 13% 40% 13% 15% 15% 4%;
+  padding: $standard;
+
+  span {
+    padding: 0 $standard;
+  }
+
+  .toggle-details {
+    padding: 0;
+  }
+}
+
+.transaction-details {
+  font-size: 0.75em;
+
+  h3.header {
+    text-align: left;
+    margin-bottom: $half;
+  }
+
+  .grid-row.header {
+    font-weight: normal;
+  }
+
+  .payments {
+    margin-top: $double;
+    padding-top: $double;
+    border-top: 1px solid $light;
+  }
+
+  .grid-row span {
+    padding: $half;
+  }
+
+  .no-content {
+    padding: $half 0;
+  }
+}
+
+.person {
+  grid-template-columns: 20% 35% 15% 15% 15%;
+}
+
+.payment {
+  grid-template-columns: 10% 22% 32% 12% 12% 12%;
+}

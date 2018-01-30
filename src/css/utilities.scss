@@ -1,0 +1,35 @@
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+
+div.grid-row {
+  display: grid;
+  align-items: center;
+
+  span {
+    text-align: center;
+
+    &:first-child {
+      padding-left: 0;
+      text-align: left;
+    }
+    &:last-child {
+      padding-right: 0;
+      text-align: right;
+    }
+    &.left {
+      text-align: left;
+    }
+    &.right {
+      text-align: right;
+    }
+  }
+}
+
+button {
+  margin: $half 0;
+  padding: $quarter $half;
+}
