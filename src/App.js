@@ -4,12 +4,12 @@ import MOCKS from './mock.json';
 function Payment(props) {
   return (
     <div className="payment grid-row">
-      <span className="date">{props.payment.date}</span>
-      <span className="person">{props.payment.person}</span>
-      <span className="description">{props.payment.description}</span>
-      <span className="amount">{props.payment.amount}</span>
-      <span className="paid">{props.payment.paid}</span>
-      <span className="remaining">{props.payment.left}</span>
+      <div className="date">{props.payment.date}</div>
+      <div className="person">{props.payment.person}</div>
+      <div className="description">{props.payment.description}</div>
+      <div className="amount">{props.payment.amount}</div>
+      <div className="paid">{props.payment.paid}</div>
+      <div className="remaining">{props.payment.left}</div>
     </div>
   )
 }
@@ -30,12 +30,12 @@ function Payments(props) {
     <div className="payments">
       <h3 className="header">Payback History</h3>
       <div className="payment grid-row header">
-        <span className="date">Date</span>
-        <span className="person">Person</span>
-        <span className="description">Description</span>
-        <span className="amount">Amount</span>
-        <span className="paid">Total Paid</span>
-        <span className="remaining">Now Left</span>
+        <div className="date">Date</div>
+        <div className="person">Person</div>
+        <div className="description">Description</div>
+        <div className="amount">Amount</div>
+        <div className="paid">Total Paid</div>
+        <div className="remaining">Now Left</div>
       </div>
       {payments.length ? payments : noPayments}
       <button className="add-payment">+ add payback</button>
@@ -46,14 +46,14 @@ function Payments(props) {
 function Person(props) {
   return (
     <div className="person grid-row">
-      <span className="name">{props.person.name}</span>
-      <span className="breakdown">
+      <div className="name">{props.person.name}</div>
+      <div className="breakdown">
         $<input type="text" className="amount" />
         <input type="text" className="percentage" />%
-      </span>
-      <span className="should">{props.person.should}</span>
-      <span className="paid">{props.person.paid}</span>
-      <span className="remaining">{props.person.remaining}</span>
+      </div>
+      <div className="should">{props.person.should}</div>
+      <div className="paid">{props.person.paid}</div>
+      <div className="remaining">{props.person.remaining}</div>
     </div>
   )
 }
@@ -74,11 +74,11 @@ function People(props) {
     <div className="people">
       <h3 className="header">Breakdown by Person</h3>
       <div className="person grid-row header">
-        <span className="name">Person</span>
-        <span className="breakdown">Breakdown</span>
-        <span className="should">Should</span>
-        <span className="paid">Paid</span>
-        <span className="remaining">Left</span>
+        <div className="name">Person</div>
+        <div className="breakdown">Breakdown</div>
+        <div className="should">Should</div>
+        <div className="paid">Paid</div>
+        <div className="remaining">Left</div>
       </div>
       {people.length ? people : noPeople}
       <button className="add-person">+ add person</button>
@@ -118,16 +118,16 @@ class Transaction extends React.Component {
     return (
       <div className={transactionClassNames.join(' ')}>
         <div className="transaction-main grid-row">
-          <span className="date">{this.props.transaction.date}</span>
-          <span className="description left">{this.props.transaction.description}</span>
-          <span className="amount">{this.props.transaction.amount}</span>
-          <span className="my-stats">paid/should</span>
-          <span className="remaining">left goes here</span>
-          <span className="toggle-details" onClick={() => this.handleClick()}>
+          <div className="date">{this.props.transaction.date}</div>
+          <div className="description left">{this.props.transaction.description}</div>
+          <div className="amount">{this.props.transaction.amount}</div>
+          <div className="my-stats">paid/should</div>
+          <div className="remaining">left goes here</div>
+          <div className="toggle-details" onClick={() => this.handleClick()}>
             <button>
               {this.state.expanded === true ? '-' : '+'}
             </button>
-          </span>
+          </div>
         </div>
         <TransactionDetails
           people={this.props.transaction.people}
@@ -151,12 +151,12 @@ function Transactions(props) {
     <div className="transactions">
       <h2>this is the transactions duh</h2>
       <div className="transaction-main grid-row header">
-        <span className="date">date</span>
-        <span className="description left">description</span>
-        <span className="amount">amount</span>
-        <span className="my-stats">paid/should</span>
-        <span className="remaining">remaining</span>
-        <span className="toggle-details"></span>
+        <div className="date">date</div>
+        <div className="description left">description</div>
+        <div className="amount">amount</div>
+        <div className="my-stats">paid/should</div>
+        <div className="remaining">remaining</div>
+        <div className="toggle-details"></div>
       </div>
         { transactions.length ? transactions : noTransactions }
     </div>

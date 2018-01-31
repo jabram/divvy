@@ -9,7 +9,7 @@ div.grid-row {
   display: grid;
   align-items: center;
 
-  span {
+  > div {
     text-align: center;
 
     &:first-child {
